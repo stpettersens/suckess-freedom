@@ -1,7 +1,8 @@
 #!/bin/sh
 # Convert your suckless builds from linux to FreeBSD
+# Add dependency installs for each program for FreeBSD
 # Based on swindlemccoop's script and patches for same purpose on OpenBSD
-# Run as root or with doas.
+# Run as root or with doas
 
 _deps_dwm() {
 	echo "Installing dependencies for dwm..."
@@ -26,9 +27,7 @@ _deps_dmenu() {
 }
 
 _conv() {
-	echo "VARIABLE IS"
-	echo "$1"
-	case "$1" in
+	case "$2" in
 		dwm) _deps_dwm ;;
 		dmwblocks) _deps_dwmblocks ;;
 		st) _deps_st ;;
