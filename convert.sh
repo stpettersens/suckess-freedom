@@ -25,10 +25,11 @@ _deps_dmenu() {
 
 _conv() {
 	case "$1" in
-	dwm) _deps_dwm ;;
-	dmwblocks) _deps_dwmblocks ;;
-	st) _deps_st ;;
-	dmenu) _deps_dmenu ;;	
+		dwm) _deps_dwm ;;
+		dmwblocks) _deps_dwmblocks ;;
+		st) _deps_st ;;
+		dmenu) _deps_dmenu ;;
+	esac
 	mv "$SUCKPATH/$1" "$SUCKPATH/$1.linux"
 	cp patches/$2 "$SUCKPATH/$1"
 	printf "Build at \033[0;34m$(readlink -f $SUCKPATH)\033[0m has been \033[0;32msuccessfully patched\033[0m.\n"
