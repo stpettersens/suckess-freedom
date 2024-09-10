@@ -1,6 +1,6 @@
 #!/bin/sh
 # Convert your suckless builds from linux to FreeBSD
-# Based on swindlemccoop's patches for same purpose on OpenBSD
+# Based on swindlemccoop's script and patches for same purpose on OpenBSD
 # Run as root or with doas.
 
 _deps_dwm() {

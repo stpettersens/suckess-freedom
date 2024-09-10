@@ -20,7 +20,7 @@ XINERAMAFLAGS = -DXINERAMA
 
 # freetype
 FREETYPELIBS = -lfontconfig -lXft
-FREETYPEINC = /usr/lib/include/freetype2
+FREETYPEINC = /usr/local/include/freetype2
 # changed for FreeBSD
 
 # includes and libs
