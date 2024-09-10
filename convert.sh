@@ -30,7 +30,7 @@ _conv() {
 	echo "VARIABLE IS"
 	echo $2
 	case "$2" in
-		dwm) _deps_dwm ;;
+		dwm_config.mk) _deps_dwm ;;
 		dmwblocks) _deps_dwmblocks ;;
 		st) _deps_st ;;
 		dmenu) _deps_dmenu ;;
