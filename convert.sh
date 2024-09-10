@@ -19,6 +19,8 @@ _deps_dwmblocks() {
 _deps_st() {
 	echo "Installing dependencies for st..."
 	pkg install -y libx11
+	pkg install -y pkgconf
+	pkg install -y harfbuzz
 }
 
 _deps_dmenu() {

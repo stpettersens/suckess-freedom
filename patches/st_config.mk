@@ -1,3 +1,6 @@
+#
+# Patched for FreeBSD based on swindlemccoop's patch for OpenBSD.
+#
 # st version
 VERSION = 0.8.5
 
@@ -7,8 +10,8 @@ VERSION = 0.8.5
 PREFIX = /usr/local
 MANPREFIX = $(PREFIX)/share/man
 
-X11INC = /usr/X11R6/include
-X11LIB = /usr/X11R6/lib
+X11INC = /usr/local/include
+X11LIB = /usr/local/lib
 
 PKG_CONFIG = pkg-config
 
