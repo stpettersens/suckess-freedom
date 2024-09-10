@@ -30,10 +30,10 @@ _conv() {
 	echo "VARIABLE IS"
 	echo $2
 	case "$2" in
-		dwm_config.mk) _deps_dwm ;;
+		dwm) _deps_dwm ;;
 		dmwblocks) _deps_dwmblocks ;;
 		st) _deps_st ;;
-		dmenu) _deps_dmenu ;;
+		dmenu_config.mk) _deps_dmenu ;;
 	esac
 	mv "$SUCKPATH/$1" "$SUCKPATH/$1.linux"
 	cp patches/$2 "$SUCKPATH/$1"
