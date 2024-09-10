@@ -37,6 +37,7 @@ _conv() {
 	esac
 	mv "$SUCKPATH/$1" "$SUCKPATH/$1.linux"
 	cp patches/$2 "$SUCKPATH/$1"
+	echo
 	printf "Build at \033[0;34m$(readlink -f $SUCKPATH)\033[0m has been \033[0;32msuccessfully patched\033[0m.\n"
 }
 
