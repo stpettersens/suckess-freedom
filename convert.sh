@@ -26,6 +26,8 @@ _deps_dmenu() {
 }
 
 _conv() {
+	echo "VARIABLE IS"
+	echo "$1"
 	case "$1" in
 		dwm) _deps_dwm ;;
 		dmwblocks) _deps_dwmblocks ;;
