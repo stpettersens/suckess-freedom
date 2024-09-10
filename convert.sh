@@ -1,7 +1,34 @@
 #!/bin/sh
-# convert your suckless builds from linux to openbsd
+# Convert your suckless builds from linux to FreeBSD
+# Based on swindlemccoop's patches for same purpose on OpenBSD
+# Run as root or with doas.
+
+_deps_dwm() {
+	echo "Installing dependencies for dwm..."
+	echo "TODO"
+}
+
+_deps_dwmblocks() {
+	echo "Installing dependencies for dwmblocks..."
+	echo "TODO"
+}
+
+_deps_st() {
+	echo "Installing dependencies for st..."
+	echo "TODO"
+}
+
+_deps_dmenu() {
+	echo "Installing dependencies for dmenu..."
+	echo "TODO"
+}
 
 _conv() {
+	case "$1" in
+	dwm) _deps_dwm ;;
+	dmwblocks) _deps_dwmblocks ;;
+	st) _deps_st ;;
+	dmenu) _deps_dmenu ;;	
 	mv "$SUCKPATH/$1" "$SUCKPATH/$1.linux"
 	cp patches/$2 "$SUCKPATH/$1"
 	printf "Build at \033[0;34m$(readlink -f $SUCKPATH)\033[0m has been \033[0;32msuccessfully patched\033[0m.\n"

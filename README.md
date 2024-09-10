@@ -1,8 +1,8 @@
-## SucklessFreedom 
-### ATTENTION: Work in progress 
+## Suckless Freedom for FreeBSD
 
 Patches for suckless builds on FreeBSD.
-Based on the work of swindlesmccoop below, use exactly the same way on FreeBSD:
+Based on the work of swindlesmccoop (OpenSuck for OpenBSD).
+Use exactly the same way on FreeBSD:
 
 # OpenSuck
 
