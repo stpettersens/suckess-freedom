@@ -23,7 +23,6 @@ XINERAMAFLAGS = -DXINERAMA
 # freetype
 FREETYPELIBS = -lfontconfig -lXft
 FREETYPEINC = /usr/local/include/freetype2
-FREETYPEINC = ${X11INC}/freetype2
 KVMLIB = -lkvm
 # changed for FreeBSD
 
