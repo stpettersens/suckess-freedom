@@ -5,22 +5,24 @@
 
 _deps_dwm() {
 	echo "Installing dependencies for dwm..."
-	echo "TODO"
+	pkg install -y libx11
 }
 
 _deps_dwmblocks() {
 	echo "Installing dependencies for dwmblocks..."
-	echo "TODO"
+	pkg install -y libx11
 }
 
 _deps_st() {
 	echo "Installing dependencies for st..."
-	echo "TODO"
+	pkg install -y libx11
 }
 
 _deps_dmenu() {
 	echo "Installing dependencies for dmenu..."
-	echo "TODO"
+	pkg install -y libx11
+	pkg install -y libxinerama
+	pkg install -y libxft
 }
 
 _conv() {
