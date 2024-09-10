@@ -7,6 +7,8 @@
 _deps_dwm() {
 	echo "Installing dependencies for dwm..."
 	pkg install -y libx11
+	pkg install -y libxinerama
+	pkg install -y libxft
 }
 
 _deps_dwmblocks() {
@@ -27,12 +29,10 @@ _deps_dmenu() {
 }
 
 _conv() {
-	echo "VARIABLE IS"
-	echo $2
 	case "$2" in
-		dwm) _deps_dwm ;;
-		dmwblocks) _deps_dwmblocks ;;
-		st) _deps_st ;;
+		dwm_config.mk) _deps_dwm ;;
+		dmwblocks_Makefile) _deps_dwmblocks ;;
+		st_config.mk) _deps_st ;;
 		dmenu_config.mk) _deps_dmenu ;;
 	esac
 	mv "$SUCKPATH/$1" "$SUCKPATH/$1.linux"
