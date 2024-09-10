@@ -6,6 +6,7 @@
 
 _deps_dwm() {
 	echo "Installing dependencies for dwm..."
+	pkg install -y xorg
 	pkg install -y libx11
 	pkg install -y libxinerama
 	pkg install -y libxft
