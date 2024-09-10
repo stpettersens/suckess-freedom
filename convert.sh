@@ -31,7 +31,7 @@ _deps_dmenu() {
 _conv() {
 	case "$2" in
 		dwm_config.mk) _deps_dwm ;;
-		dmwblocks_Makefile) _deps_dwmblocks ;;
+		dwmblocks_Makefile) _deps_dwmblocks ;;
 		st_config.mk) _deps_st ;;
 		dmenu_config.mk) _deps_dmenu ;;
 	esac
