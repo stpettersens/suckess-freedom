@@ -11,7 +11,7 @@ Use exactly the same way on FreeBSD as:
 
 ## Usage
 ```
-./convert.sh [program]
+(doas) ./convert.sh [program]
 ```
 [program] can be:
 - [dwm](https://github.com/stpettersens/dwm)
